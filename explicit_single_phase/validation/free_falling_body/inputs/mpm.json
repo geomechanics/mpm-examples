@@ -1,0 +1,48 @@
+{
+  "title": "free-falling-body",
+  "mesh": {
+    "mesh": "mesh.txt",
+    "cell_type": "ED2Q4",
+    "isoparametric": false,
+    "io_type": "Ascii2D",
+    "node_type": "N2D"
+  },
+  "particles": [
+    {
+      "generator": {
+        "check_duplicates": true,
+        "location" : "particles.txt",
+        "io_type" : "Ascii2D",
+        "particle_type" : "P2D",
+        "pset_id" : 99,
+        "material_id" : 0,
+        "type" : "file"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": 0,
+      "type": "LinearElastic2D",
+      "density": 1000,
+      "youngs_modulus": 100e3,
+      "poisson_ratio": 0.0
+    }
+  ],
+  "external_loading_conditions": {
+    "gravity": [0, -9.81]
+  },
+  "analysis": {
+    "type": "MPMExplicit2D",
+    "stress_update": "usf",
+    "dt": 1e-4,
+    "uuid": "free-falling-body",
+    "nsteps": 10001,
+    "velocity_update": false
+  },
+  "post_processing": {
+    "path": "results/",
+    "vtk" : ["displacements"],
+    "output_steps": 500
+  }
+}
