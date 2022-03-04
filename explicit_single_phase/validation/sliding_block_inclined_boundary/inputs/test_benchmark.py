@@ -14,6 +14,11 @@ df.append(df1)
 df.append(df2)
 df.append(df3)
 
+print(df['coord_x'].min())
+print(df['coord_x'].max())
+print(df['coord_y'].min())
+print(df['coord_y'].max())
+
 ## Assert location of particles
 assert round(df['coord_x'].min() - 3.285773141443035, 8) == 0.0
 assert round(df['coord_x'].max() - 3.9749404708911587, 8) == 0.0
