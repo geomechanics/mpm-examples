@@ -5,10 +5,10 @@ import pandas as pd
 os.chdir(pathlib.Path(__file__).parent.absolute())
 
 # Test location of particles
-df0 = pd.read_hdf('results/boundary_inclined_friction/particles-0_4-099000.h5', 'table')
-df1 = pd.read_hdf('results/boundary_inclined_friction/particles-1_4-099000.h5', 'table')
-df2 = pd.read_hdf('results/boundary_inclined_friction/particles-2_4-099000.h5', 'table')
-df3 = pd.read_hdf('results/boundary_inclined_friction/particles-3_4-099000.h5', 'table')
+df0 = pd.read_hdf('results/boundary_inclined_friction/particles-0_4-100000.h5', 'table')
+df1 = pd.read_hdf('results/boundary_inclined_friction/particles-1_4-100000.h5', 'table')
+df2 = pd.read_hdf('results/boundary_inclined_friction/particles-2_4-100000.h5', 'table')
+df3 = pd.read_hdf('results/boundary_inclined_friction/particles-3_4-100000.h5', 'table')
 df = df0
 df = df.append(df1)
 df = df.append(df2)
