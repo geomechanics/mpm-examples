@@ -43,6 +43,6 @@ assert round(df['stress_xx'].min() - 0.7500094308335878, 8) == 0.0
 assert round(df['stress_xx'].max() - 1.0000240617444776, 8) == 0.0
 
 ## Step 990
-df = pd.read_hdf('results/uniaxial-particle-traction-2d/particles0990.h5', 'table')
-assert round(df['stress_xx'].min() - 0.7500029258993646, 8) == 0.0
-assert round(df['stress_xx'].max() - 0.9999997852991345, 8) == 0.0
+df = pd.read_hdf('results/uniaxial-particle-traction-2d/particles1000.h5', 'table')
+assert round(df['stress_xx'].min() - 0.7500029086774894, 8) == 0.0
+assert round(df['stress_xx'].max() - 0.9999997287911152, 8) == 0.0
