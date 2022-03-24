@@ -27,5 +27,5 @@ leading to expected displacement of `u=1e-4 [m]`.
 As the column reaches steady state, the base displacement approaches `u=1e-4 [m]` for both the 2D and 3D MPM models. This is one indication that the Kelvin-Voigt boundary conditions are accurately implemented. 
 
 <p align="center">
-  <img src="data/uniaxial_absorbing_boundary.png" alt="Displacement at column base for uniaxial compression with Kelvin-Voigt boundary conditions." style="width: 800px;"/>
+  <img src="data/uniaxial_absorbing_boundary.png" alt="Displacement at column base for uniaxial compression with Kelvin-Voigt boundary conditions." style="width: 500px;"/>
 </p>
