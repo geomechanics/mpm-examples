@@ -71,7 +71,7 @@
   ],
   "analysis": {
     "type": "MPMExplicit2D",
-    "stress_update": "usf",
+    "mpm_scheme": "usf",
     "dt": 1e-5,
     "uuid": "column-2D",
     "nsteps": 30000,
