@@ -29,3 +29,9 @@ As the column reaches steady state, the base displacement approaches `u=1e-4 [m]
 <p align="center">
   <img src="data/uniaxial_absorbing_boundary.png" alt="Displacement at column base for uniaxial compression with Kelvin-Voigt boundary conditions." style="width: 500px;"/>
 </p>
+
+## Benchmark 
+
+The `test_benchmark.py` file checks the minimum displacement (at the column base) matches the exact solution. For both the 2D and 3D MPM models, the numerical vertical displacement is `u=1e-4 [m]` within an error of `1e-6 [m]`. 
+
+> Please note, one source of error is the difference between the exact solution and MPM solution locations. The exact vertical displacment is computed at the column base while the MPM outputs are recorded at Gauss point locations (i.e., slightly offset from the column base).
