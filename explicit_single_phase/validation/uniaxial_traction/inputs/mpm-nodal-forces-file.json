@@ -59,12 +59,12 @@
   "analysis" : {
     "type" : "MPMExplicit2D", 
     "dt" : 0.001,
-    "uuid" : "uniaxial-nodal-forces-2d",
+    "uuid" : "uniaxial-nodal-forces-file-2d",
     "velocity_update" : true,
     "nsteps" : 1000,
     "resume" : {
       "resume": false,
-      "uuid" : "uniaxial-nodal-forces-2d",
+      "uuid" : "uniaxial-nodal-forces-file-2d",
       "step" : 500
     }
   },

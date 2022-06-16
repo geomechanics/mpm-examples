@@ -20,7 +20,7 @@ df = pd.read_hdf('results/uniaxial-nodal-forces-2d/particles0750.h5', 'table')
 assert round(df['stress_xx'].min() - 1.0000057400725588, 8) == 0.0
 assert round(df['stress_xx'].max() - 1.0000241541441601, 8) == 0.0
 
-## Step 990
+## Step 1000
 df = pd.read_hdf('results/uniaxial-nodal-forces-2d/particles1000.h5', 'table')
 assert round(df['stress_xx'].min() - 0.999998970020447, 8) == 0.0
 assert round(df['stress_xx'].max() - 0.999998991968051, 8) == 0.0
@@ -42,7 +42,7 @@ df = pd.read_hdf('results/uniaxial-particle-traction-2d/particles0750.h5', 'tabl
 assert round(df['stress_xx'].min() - 0.7500094308335878, 8) == 0.0
 assert round(df['stress_xx'].max() - 1.0000240617444776, 8) == 0.0
 
-## Step 990
+## Step 1000
 df = pd.read_hdf('results/uniaxial-particle-traction-2d/particles1000.h5', 'table')
 assert round(df['stress_xx'].min() - 0.7500029086774894, 8) == 0.0
 assert round(df['stress_xx'].max() - 0.9999997287911152, 8) == 0.0
