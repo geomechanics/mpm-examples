@@ -1,6 +1,6 @@
 # Geomechanics MPM Examples
 
-This repository contains a collection validation and example cases for [Geomecahnics MPM](https://github.com/geomechanics/mpm). 
+This repository contains a collection of validation and example cases for [Geomechanics MPM](https://github.com/geomechanics/mpm). 
 
 
 ## Explicit Single-Phase
